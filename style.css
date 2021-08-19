@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Be Vietnam", sans-serif;
+  font-size: 16px;
+  color: hsl(228, 39%, 23%);
+}
+.header{
+    margin-bottom: 10px;
+}
+.main-container{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    gap: 10px;
+}
+.work-grid{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    gap: 10px;
+}
+.education-grid{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    gap: 10px;
+}
+.italic-text{
+    font-style: italic;
+}
+
+img {
+    width: 40px;
+    display: inline;
+    margin-bottom: -10px;
+}
+h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+h2{
+    display: inline-block;
+    margin-left: 10px;
+}
+h3{
+    margin-bottom: 10px;
+    
+}
+p{
+    margin-bottom: 20px;
+}
+
+.contact-box{
+    margin-bottom: 40px;
+}
+
+.skills{
+    list-style: none;
+}
+.my-contact{
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+.my-education{
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+.my-work{
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+.my-skills{
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+@media(max-width: 760px) {
+    .main-grid{
+        grid-template-columns: 1fr;
+    }
+    .contact-flex{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+}
